@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: cn.lanqiao.springboot3.ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.813 s <<< FAILURE! - in cn.lanqiao.springboot3.ApplicationTests
+datasourceTest  Time elapsed: 5.689 s  <<< ERROR!
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at cn.lanqiao.springboot3.ApplicationTests.datasourceTest(ApplicationTests.java:28)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at cn.lanqiao.springboot3.ApplicationTests.datasourceTest(ApplicationTests.java:28)
+Caused by: java.net.ConnectException: Connection refused
+	at cn.lanqiao.springboot3.ApplicationTests.datasourceTest(ApplicationTests.java:28)
+
